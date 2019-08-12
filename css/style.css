@@ -141,10 +141,17 @@ h1{
 
 /* GEO */
 .o-geo{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid white;
   border-radius:4px;
   padding:25px;
@@ -156,12 +163,17 @@ h1{
   font-family: "OrstedSans", "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
-  
+  width:55%;
 }
 
 .o-geo-switch{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   cursor: pointer;
 }
 
@@ -179,7 +191,7 @@ h1{
   width:52px;
   height:30px;
   background-color:rgba(255, 255, 255, .3);
-  border-radius:100px;
+  border-radius:30px;
 }
 
 .o-geo-knot{
@@ -190,7 +202,10 @@ h1{
   top:2px;
   height:26px;
   width: 26px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+  -webkit-transition: all 250ms ease-out;
+  -o-transition: all 250ms ease-out;
   transition: all 250ms ease-out;
 }
 
