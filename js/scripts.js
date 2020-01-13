@@ -376,10 +376,10 @@ function mobileCheck(a) {
 }
 
 var init = setInterval(function() {
-  if (typeof jQuery != "undefined" && typeof jQuery != undefined) {
+  if (jQuery != "undefined" && jQuery != undefined) {
     clearInterval(init);
 
-    jQuery(window).on("load", function() {
+    jQuery(document).ready(function() {
       mobileCheck(navigator.userAgent || navigator.vendor || window.opera);
 
       isMobile = jQuery.browser.mobile;
